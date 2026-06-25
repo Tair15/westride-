@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("mobile-menu");
   if (!toggle || !menu) return;
 
-  const open = () => menu.classList.remove("hidden");
-  const close = () => menu.classList.add("hidden");
+  const open = () => menu.classList.replace("hidden", "flex");
+  const close = () => menu.classList.replace("flex", "hidden");
   const isOpen = () => !menu.classList.contains("hidden");
 
   toggle.addEventListener("click", (e) => {
