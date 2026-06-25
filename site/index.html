@@ -30,16 +30,16 @@
     <section class="flex w-full flex-col">
       <!-- @include header -->
 
-      <!-- Hero (image cropped 200px top + 500px bottom) -->
-      <div class="relative h-[calc(110vh-300px)] w-full overflow-hidden">
+      <!-- Hero: mobile shows the full photo (natural height); desktop crops it tall (200px top + 500px bottom) -->
+      <div class="relative w-full overflow-hidden md:h-[calc(110vh-300px)]">
         <img
           src="assets/images/home.jpg"
           alt="Westride car service"
-          class="-mt-50 block h-[110vh] w-full object-cover object-top"
+          class="block w-full object-cover object-top md:-mt-50 md:h-[110vh]"
         />
         <div class="absolute inset-0 flex items-center justify-center px-4">
           <h1
-            class="text-center font-display text-[48px] font-extrabold uppercase leading-tight text-white md:text-[72px] nav:text-[12vh]"
+            class="text-center font-display text-[30px] font-extrabold uppercase leading-tight text-white md:text-[72px] nav:text-[12vh]"
           >
             Westride<br />is the AI ride booking machine
           </h1>
