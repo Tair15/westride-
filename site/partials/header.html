@@ -1,0 +1,58 @@
+<header class="w-full">
+  <!-- Top utility bar -->
+  <div class="flex w-full items-center justify-between bg-brand-blue px-6 py-2 nav:px-[50px]">
+    <ul class="flex list-none items-center gap-5 text-[18px] text-white">
+      <li><a href="https://www.instagram.com/westrideapp/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://x.com/westrideai" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/westrideai" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+    <button type="button" class="flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1 text-sm font-medium text-ink">
+      English <i class="fa-solid fa-chevron-down text-[10px]"></i>
+    </button>
+  </div>
+
+  <!-- Main bar -->
+  <div class="relative flex w-full items-center justify-between gap-4 bg-paper px-6 py-4 nav:px-[50px]">
+    <a href="index.html" class="flex items-center gap-2.5" aria-label="Westride home">
+      <img src="assets/images/westride-logo.png" alt="" class="h-11 w-11 object-contain" />
+      <span class="font-display text-[26px] font-bold text-brand-green">Westride</span>
+    </a>
+
+    <nav class="hidden nav:block">
+      <ul class="flex list-none items-center gap-10">
+        <li><a class="text-lg font-medium text-ink" href="index.html">Request</a></li>
+        <li><a class="text-lg font-medium text-ink" href="book.html">Book</a></li>
+        <li><a class="text-lg font-medium text-ink" href="service.html">Services</a></li>
+        <li><a class="text-lg font-medium text-ink" href="fleet.html">Fleet</a></li>
+        <li><a class="text-lg font-medium text-ink" href="rates.html">Rates</a></li>
+      </ul>
+    </nav>
+
+    <div class="hidden whitespace-nowrap text-lg font-semibold text-ink nav:block">
+      <a href="tel:+19179367353">917-936-7353</a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="menu-toggle" type="button" aria-label="Toggle menu" aria-controls="mobile-menu" class="cursor-pointer text-2xl text-ink nav:hidden">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="absolute left-0 top-full z-[1000] hidden w-full flex-col items-center justify-center gap-5 bg-ink py-6 nav:hidden">
+      <ul class="flex list-none flex-col items-center gap-[30px] text-center">
+        <li><a class="text-lg font-normal text-white" href="index.html">Request</a></li>
+        <li><a class="text-lg font-normal text-white" href="book.html">Book</a></li>
+        <li><a class="text-lg font-normal text-white" href="service.html">Services</a></li>
+        <li><a class="text-lg font-normal text-white" href="fleet.html">Fleet</a></li>
+        <li><a class="text-lg font-normal text-white" href="rates.html">Rates</a></li>
+        <li><a class="text-lg font-normal text-white" href="contact.html">Contact us</a></li>
+      </ul>
+      <div class="whitespace-nowrap text-lg text-white"><a href="tel:+19179367353">917-936-7353</a></div>
+      <ul class="flex list-none gap-[30px] text-[23px] text-white">
+        <li><a href="https://www.instagram.com/westrideapp/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://x.com/westrideai" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/westrideai" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>

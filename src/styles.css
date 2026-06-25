@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Scan the authored HTML so utilities are generated. (Tailwind v4 — no tailwind.config.js.) */
+@source "../site/**/*.html";
+
+/*
+  Single themed source of truth for design tokens (non-negotiable: never inline hex).
+  Every brand color is defined here exactly once and referenced everywhere by token name.
+  Adding a new color? It goes here first, never improvised at the call site.
+*/
+@theme {
+  /* Brand palette (derived from the original Bootstrap site.css) */
+  --color-brand-red: #d6001c;   /* primary brand red */
+  --color-brand-green: #11d99c; /* accent green */
+  --color-brand-blue: #0d6efd;  /* top utility bar */
+  --color-ink: #111111;         /* primary text / dark surfaces */
+  --color-paper: #ffffff;       /* light surfaces */
+  --color-muted: #cccccc;       /* borders / subtle text */
+
+  /* Typography (loaded via <link> from Google Fonts in each page head) */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Custom breakpoint: the original collapses the top nav to a hamburger at
+     1100px. Generates the `nav:` variant so we keep that exact behavior. */
+  --breakpoint-nav: 1100px;
+}
+
+/* Base: site defaults that aren't expressible as utilities on every element. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: var(--color-paper);
+  }
+}

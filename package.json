@@ -1,0 +1,19 @@
+{
+  "name": "westride-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Westride customer site (Home, Services, Fleet, Contact) — Tailwind v4 migration from Bootstrap.",
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "verify:css": "node ./scripts/verify-css.mjs",
+    "bundle": "node ./scripts/bundle.mjs",
+    "build": "npm run clean && npm run build:css && npm run verify:css && npm run bundle",
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "clean": "node ./scripts/clean.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

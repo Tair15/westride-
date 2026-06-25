@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book with us | Westride</title>
+    <meta name="description" content="Book your Westride ride — tell us the details and we’ll take care of the rest." />
+    <link rel="icon" href="assets/images/westride-logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="flex min-h-screen flex-col items-center">
+    <section class="flex w-full flex-col">
+      <!-- @include header -->
+    </section>
+
+    <!-- Book form -->
+    <main class="w-full">
+      <section class="mx-auto w-full max-w-[520px] px-5 py-[60px]">
+        <h1 class="mb-10 text-center text-[32px] font-semibold md:text-[40px]">Book with us</h1>
+
+        <form class="flex flex-col gap-5" action="book.php" method="POST">
+          <div>
+            <label for="subject" class="mb-1.5 block text-base font-light">Subject <span class="text-brand-red">*</span></label>
+            <input id="subject" name="subject" type="text" required class="w-full rounded-[3px] border border-muted px-3.5 py-3 text-base" />
+          </div>
+
+          <div>
+            <label for="name" class="mb-1.5 block text-base font-light">Name <span class="text-brand-red">*</span></label>
+            <input id="name" name="name" type="text" required class="w-full rounded-[3px] border border-muted px-3.5 py-3 text-base" />
+          </div>
+
+          <div>
+            <label for="email" class="mb-1.5 block text-base font-light">Email <span class="text-brand-red">*</span></label>
+            <input id="email" name="email" type="email" required class="w-full rounded-[3px] border border-muted px-3.5 py-3 text-base" />
+          </div>
+
+          <div>
+            <label for="phone" class="mb-1.5 block text-base font-light">Phone <span class="text-brand-red">*</span></label>
+            <input id="phone" name="phone" type="tel" required class="w-full rounded-[3px] border border-muted px-3.5 py-3 text-base" />
+          </div>
+
+          <div>
+            <label for="message" class="mb-1.5 block text-base font-light">Message <span class="text-brand-red">*</span></label>
+            <textarea id="message" name="message" required class="min-h-[120px] w-full resize-none rounded-[3px] border border-muted px-3.5 py-3 text-base"></textarea>
+          </div>
+
+          <div class="flex justify-center">
+            <button type="submit" class="mt-2 cursor-pointer rounded-[20px] bg-brand-red px-10 py-5 font-display text-lg font-bold uppercase leading-none text-white">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- @include footer -->
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
